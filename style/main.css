@@ -1,0 +1,223 @@
+:root {
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.logo {
+    color: var(--vermelho);
+    margin-left: 5px;
+    font-family: 'arial black';
+    font-size: 35px;
+    /*font-size:196%;
+     perspective: 1000px;
+    perspective-origin: 50% 0;
+    transform-origin: 0 0;
+    transform: scaleX(80) rotateY(89.5deg0); */
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+    position: absolute;
+    width: 98%;
+    top: 0;
+    z-index: 2;
+    padding-left: 3%;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-right: 10px;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+
+/* Filme Principal*/
+
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50) 100%);
+    /*, url('/video/b267e217-bb07-4c69-b0b2-7d80c799768d.mp4');
+    margin:0px;*/
+    height: 751px;
+}
+
+.botoes {
+    /*gambiarra para colocar os botoes em baixo*/
+    position: absolute;
+    margin-top: 150px;
+}
+
+.titulo {
+    position: absolute;
+    margin-bottom: 90px;
+    /*descrição abaixo do titulo = subir o titulo*/
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease all;
+}
+
+.botao:hover {
+    /*    */
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    /*Espaçamento entre o ícone e o texto*/
+    margin-right: 8px;
+}
+
+.filme-principal .container {
+    width: auto;
+    bottom: 80px;
+}
+
+#background {
+    position: absolute;
+    margin: 0px;
+    padding-bottom: 0;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    margin-top: -1%;
+    z-index: 1;
+    top: 0;
+    padding: 0;
+    opacity: 0.5;
+}
+
+.descricao {
+    margin-top: 2%;
+    text-align: justify;
+    width: 60%;
+}
+
+.mutar {
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: .5s ease all;
+    position: sticky;
+    float: right;
+    z-index: 2;
+    padding: 5px;
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    margin-top: 600px;
+}
+
+.mutar:hover {
+    background-color: white;
+    color: black;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin-top: -50px;
+}
+
+@media screen and (max-width:800px) {
+    .filme-principal {
+        font-size: 16px;
+        background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50) 100%);
+        /*, url('/video/b267e217-bb07-4c69-b0b2-7d80c799768d.mp4');
+    margin:0px;*/
+        height: 270px;
+    }
+    .mutar {
+        background-color: rgba(0, 0, 0, .50);
+        border: none;
+        color: white;
+        cursor: pointer;
+        transition: .5s ease all;
+        position: sticky;
+        float: right;
+        z-index: 2;
+        padding: 5px;
+        height: 40px;
+        width: 40px;
+        border-radius: 40px;
+        margin-top: 200px;
+    }
+    .mutar:hover {
+        background-color: white;
+        color: black;
+    }
+    .botoes {
+        /*gambiarra para colocar os botoes em baixo*/
+        position: absolute;
+        margin-top: 140px;
+    }
+    .titulo {
+        position: absolute;
+        margin-bottom: 150px;
+        /*descrição abaixo do titulo = subir o titulo*/
+        font-size: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .botao {
+        background-color: rgba(0, 0, 0, .50);
+        border: none;
+        color: white;
+        padding: 15px 30px;
+        margin-right: 15px;
+        font-size: 12px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: .5s ease all;
+    }
+    .botao:hover {
+        /*    */
+        background-color: white;
+        color: black;
+    }
+    .botao i {
+        /*Espaçamento entre o ícone e o texto*/
+        margin-right: 8px;
+    }
+    .filme-principal .container {
+        width: auto;
+        bottom: 300px;
+    }
+    .descricao {
+        margin-top: 1%;
+        text-align: justify;
+        width: 200%;
+        margin-right: 5%;
+    }
+}

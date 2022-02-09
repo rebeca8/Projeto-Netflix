@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+
+    <!--owl css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <title>NETFLIX CLONE</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h2 class="logo">PETFLIX</h2>
+            <nav class="muda">
+                <a href="#"> Inicio</a>
+                <a href="#"> Séries</a>
+                <a href="#"> Filmes</a>
+                <a href="#"> Documentários</a>
+            </nav>
+
+        </div>
+    </header>
+    <main>
+        <div>
+            <header>
+                <div>
+                    <button class="mutar" onclick="document.getElementById('background').muted = !document.getElementById('background').muted">
+                <i class="fas fa-volume-up"></i>
+                </button>
+                </div>
+                <video id="background" src="/video/pets.mp4" autoplay="true" loop="true"></video>
+            </header>
+            <div class="filme-principal">
+                <div class="container">
+                    <h3 class="titulo">PETS UNIDOS (2019)</h3>
+                    <p class="descricao ">Max, um cão da raça terrier, precisa aprender a conviver com Duke, o novo cão do seu dono. Os dois acabam na carrocinha e agora, juntos nas ruas de Nova York, conhecem um adorável coelho branco, líder de um exército de animais abandonados.
+                    </p>
+                    <div class="botoes">
+                        <button role="button" class="botao">
+                <i class="fas fa-play"></i>
+                ASSISTIR AGORA
+            </button>
+                        <button role="button" class="botao">
+                <i class="fas fa-info-circle"></i>
+                MAIS INFORMAÇÕES
+            </button>
+                    </div>
+                </div>
+
+            </div>
+    </main>
+
+    <div class="carrosel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="blox-filme" src="img/101dalmatas.jpg">
+            </div>
+            <div>
+                <img src="img/afugadasgalinhas.jpg">
+            </div>
+            <div>
+                <img src="img/damaevagabundo.jpg">
+            </div>
+            <div>
+                <img src="img/happyfeet.jpg">
+            </div>
+            <div>
+                <img src="img/oreileao.jpg">
+            </div>
+            <div>
+                <img src="img/petsunidos.jpg">
+            </div>
+            <div>
+                <img src="img/vacatussa.jpg">
+            </div>
+            <div>
+                <img src="img/bambi.jpg">
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/bfe010f78d.js" crossorigin="anonymous"></script>
+
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <footer align=center font-size=verdana>
+        <p>Clone da Interface da Netflix desenvolvido como projeto da Digital Innovation One</p>
+        <p>© Desenvolvido por Inessa Rebeca</p>
+    </footer>
+</body>
+
+</html>

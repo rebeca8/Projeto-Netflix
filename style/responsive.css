@@ -1,0 +1,57 @@
+@media screen and (max-width:375px) {
+    .logo {
+        color: var(--vermelho);
+        margin-left: -14px;
+        font-family: 'arial black';
+        font-size: 20px;
+    }
+    nav a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        margin-right: 5px;
+        font-size: 15px;
+    }
+    nav a:hover {
+        color: #fff;
+    }
+    .titulo {
+        position: absolute;
+        margin-bottom: 250px;
+        /*descrição abaixo do titulo = subir o titulo*/
+        font-size: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin-left: -14px;
+    }
+    .descricao {
+        margin-bottom: 30%;
+        text-align: justify;
+        width: 100%;
+        margin-left: -14px;
+    }
+    .filme-principal {
+        font-size: 16px;
+        background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50) 100%);
+        /*, url('/video/b267e217-bb07-4c69-b0b2-7d80c799768d.mp4');
+        margin:0px;*/
+        height: 240px;
+        /*  SUBIR IMAGEM ROLAGEM*/
+        margin-top: -30px;
+        /*  SUBIR IMAGEM ROLAGEM*/
+    }
+    .botoes {
+        /*gambiarra para colocar os botoes em baixo*/
+        position: absolute;
+        margin-top: 90px;
+    }
+    .botao {
+        background-color: rgba(0, 0, 0, .50);
+        border: none;
+        color: white;
+        padding: 10px 10px;
+        margin-right: 15px;
+        font-size: 12px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: .5s ease all;
+    }
+}
