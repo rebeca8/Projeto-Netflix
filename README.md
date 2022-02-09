@@ -5,7 +5,7 @@ Recrie a interface do principal site de streaming mundial utilizando tecnologias
 
 ## Tela
 
-![Projeto](C:\Users\Inessa\Desktop\Projeto-Netflix\video\Projeto.gif)
+![Projeto](https://github.com/rebeca8/Projeto-Netflix/blob/master/video/Projeto.gif)
 
 
 
